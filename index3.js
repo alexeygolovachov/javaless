@@ -12,6 +12,7 @@ console.log(c);
 
 D=b*b-4*a*c;
 console.log("D",D);
+// Solution1
 // console.log(D**0.5);
 // x=(D>0)? (x1=((-b-D**0.5)/2*a), x2=(-b+D**0.5)/2*a): x=-b/2*a;
 if (D>0) {
@@ -26,4 +27,6 @@ if (D>0) {
     } 
     else if (D<0) {console.log("there is no rational results")}
 
+// Solution2
+var result12 = (D>=0) ? console.log("x1,x2", x1=(-b-D**0.5)/(2*a),x2=(-b+D**0.5)/(2*a)):console.log("there is no rational results");
 
