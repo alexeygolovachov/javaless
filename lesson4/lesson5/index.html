@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./index.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        justify-content: space-between;
+      }
+      div {
+        width: fit-content;
+        height: fit-content;
+        border-radius: 10%;
+        border: solid 3px green;
+        cursor: pointer;
+      }
+      .click {
+        background: grey;
+      }
+      h1 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: grey;
+      }
+    </style>
+    <div id="test1" onclick="">timer</div>
+    <h1></h1>
+    <div id="test2" onclick="run(0, `test2`)">run</div>
+
+    <script>
+      //   let res = 0;
+      //   function clock(i, id) {
+      //     res = res + i;
+      //     document.querySelector(`h1`).innerHTML = res;
+      //     let b = document.querySelector(`.click`);
+      //     if (b) b.classList.remove(`click`);
+      //     document.querySelector(`#${id}`).classList.toggle(`click`);
+      //   }
+    
+      let h1_html =10;
+
+    function run (){
+        let id=null;
+        setInterval(()=> {
+           
+            let c= document.getElementById("test2");
+        },1000)
+        if (!id) {
+        id = setInterval(()=> {
+            let b= document.querySelector(`h1`);
+            b.style.background='red';
+            h1_html--;
+            document.querySelector(`h1`).innerHTML = h1_html;
+            if (!h1_html){
+                clearInterval(id);
+                b.style.background='grey';
+                
+            }
+            
+            }, 100);
+            ;}
+            
+    }
+    
+    </script>
+  </body>
+</html>

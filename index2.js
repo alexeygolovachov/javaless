@@ -21,12 +21,12 @@
 //     localStorage.setItem("KeycomputerNum", computeNum);
 // }
 
-var n = +prompt();
-var i=1;
-var result=1;
-for (var i=0; i<=n; i++)
-{
-    var result=result*(i+1);
+// var n = +prompt();
+// var i=1;
+// var result=1;
+// for (var i=0; i<=n; i++)
+// {
+//     var result=result*(i+1);
     
-}
-console.log(result);
+// }
+// console.log(result);

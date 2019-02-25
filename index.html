@@ -9,11 +9,13 @@
 </head>
 <body>
        <style>
-           li      {height:50px;  
-       background:red;}
+           div    {height:50px; 
+           width: 50px; 
+       background:red;
+       position: absolute;}
        
        </style>
-    <script src="./index2.js" defer> </script>
+    <!-- <script src="./index2.js" defer> </script> -->
     <!-- <script src="./index3.js" defer></script> -->
     <!-- <script src="./index4.js"></script> -->
     <!-- <table>
@@ -34,11 +36,22 @@
             }
             buffer = buffer + "/m"+line;
         }
-        console.log(buufer)
+        console.log(buffer)
            
             
             </script>
         </tbody>
     </table> -->
+    <script>
+        
+var i=1;
+var n = +prompt("n");
+while (n--)
+{
+    var t = "calc(" +Math.round(Math.random()*90)+"vh + 50px) ";
+        var l = "calc(" +Math.round(Math.random()*90)+"vw + 50px) ";
+document.write(`<div style="top:${t}; left:${l};"></div>`);
+}
+    </script>
 </body>
 </html>
